@@ -7,7 +7,7 @@
       - DOM Web API
       - React(FaceBook)
       - Vue
-      - Angela(Google)
+      - Angular(Google)
       - jQuery (out of fashion)
       - Bootstrap (out of fashion)
       - Mobile app (key point)
@@ -22,3 +22,8 @@
   - Tools
       - webpack
       - git and github
+## Micro-Front-End
+  - WebComponents
+  - 技术栈无关
+  - 独立开发、独立部署
+  - 独立运行
