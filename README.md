@@ -20,7 +20,7 @@
       - mongoDB
          - mongoose: connect node.js and mongoDB
       - mysql
-      - What are differnece mongoDB and mysql? [reference](https://www.geeksforgeeks.org/mongodb-vs-mysql/)
+      - What are differnece mongoDB and mysql? [Reference](https://www.geeksforgeeks.org/mongodb-vs-mysql/)
       
           | MySQL  | MongoDB                     |
           |--------|-----------------------------|
