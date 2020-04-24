@@ -12,6 +12,7 @@
       - Bootstrap (out of fashion)
       - Mobile app (key point)
   - Server
+      - Tomcat
       - node.js:可以让JS在服务器运行
         - Koa
         - Express
