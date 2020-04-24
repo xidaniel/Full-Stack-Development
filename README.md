@@ -20,6 +20,15 @@
       - mongoDB
          - mongoose: connect node.js and mongoDB
       - mysql
+      - What are differnece mongoDB and mysql? [reference](https://www.geeksforgeeks.org/mongodb-vs-mysql/)
+      
+          | MySQL  | MongoDB                     |
+          |--------|-----------------------------|
+          | Table  | Collection                  |
+          | Row    | Document                    |
+          | Column | Field                       |
+          | Joins  | Embedded documents, linking |
+      
   - Tools
       - webpack
       - git and github
