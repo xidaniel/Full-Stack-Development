@@ -28,6 +28,23 @@
           | Row    | Document                    |
           | Column | Field                       |
           | Joins  | Embedded documents, linking |
+          
+           - A Document in MongoDB
+           
+                 {
+                 name: "Daniel",
+                 age:20,
+                 contact:{
+                 mobile:"413406989*",
+                 home-address:"Amherst"
+                 }
+                 }
+           
+           - A Record in MySQL
+
+               | name   | age | contact-mobile | home-address |
+               |--------|-----|----------------|--------------|
+               | Daniel | 20  | 413406989*     | Amherst      |
       
   - Tools
       - webpack
