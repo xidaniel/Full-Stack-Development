@@ -1,0 +1,29 @@
+# What Is Caching?
+  - Caching is key to the performance of any kind of application. It ensures low latency and high throughput.
+  - Implemented by Key-value database
+  
+  
+# Why?
+  - It’s always a good idea to use a cache. It doesn’t do any harm.
+  - We can use caching at multiple places. Browser, Database, SO layer, network layer, CDN, etc.
+  - [Caching is also the core of the HTTP protocol.](https://web.dev/http-cache/)
+  - They can be used for cross-module communication in a microservices architecture
+  
+# How to use?
+  - Cache Aside (database -> cache)
+    - When the user sends a request for particular data, the system first looks for it in the cache. If present, then it is simply returned from it. If not, the data is fetched from the database, the cache is updated and is returned to the user.
+    - It works best with read-heavy workloads.
+    - Data strategy is written directly to database. so, cache and the database could get **inconsistent**.
+    
+  - Read-Through (database -> clear cache first)
+    - Pretty similar to the Cache Aside. So, for the first time when information is requested, it results in a cache miss. Then the backend has to update the cache while returning the response to the user.
+    - cache always stays consistent with the database.
+    
+  - Write-Through (cache -> database)
+    - Each & every information written to the database goes through the cache. Before the data is written to the DB, the cache is updated with it.
+    - High consistency between the cache and the database
+    
+  - Write-Back (cache -> set interval write to database)
+    - The data is directly written to the cache instead of the database. And the cache after some delay as per the business logic writes data to the database.
+    - It helps optimize costs significantly. 
+    - A risk in this approach is if the cache fails before the DB is updated, the data might get lost.
