@@ -1,8 +1,0 @@
-- dir : list dir
-- cd : access dir
-- md : make dir
-- rd : remove dir
-- .  : current dir
-- .. : last level dir
-- add environment variable
-  - path
